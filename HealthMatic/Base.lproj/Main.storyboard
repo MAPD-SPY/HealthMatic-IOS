@@ -88,13 +88,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aom-yq-SGa">
-                                <frame key="frameInset" minX="225" minY="487" width="84" height="30"/>
-                                <state key="normal" title="Add Patient "/>
-                                <connections>
-                                    <segue destination="hEx-qF-yrS" kind="show" id="EkC-VZ-G2l"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -118,7 +111,6 @@
                             <constraint firstItem="1UO-HV-TiA" firstAttribute="leading" secondItem="mrg-dD-wFV" secondAttribute="trailing" constant="20" id="lcC-Uh-wba"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EdG-5J-3hR" secondAttribute="trailing" constant="20" id="ma0-fR-0bF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VDu-Js-t55" secondAttribute="trailing" constant="20" id="ofs-ZW-gjx"/>
-                            <constraint firstItem="aom-yq-SGa" firstAttribute="top" secondItem="7IJ-UQ-4Ja" secondAttribute="bottom" constant="20" id="sQ4-Ai-trO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EVl-E0-9yL" secondAttribute="trailing" constant="20" id="wvW-GH-il4"/>
                         </constraints>
                     </view>
