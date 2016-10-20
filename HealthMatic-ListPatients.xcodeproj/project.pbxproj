@@ -15,6 +15,7 @@
 		2D0FB6E81DB7C11300AB7EDF /* HealthMatic_ListPatientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB6E71DB7C11300AB7EDF /* HealthMatic_ListPatientsTests.swift */; };
 		2D0FB6F31DB7C37800AB7EDF /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB6F21DB7C37800AB7EDF /* Patient.swift */; };
 		2D0FB6F51DB7C57700AB7EDF /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FB6F41DB7C57700AB7EDF /* PatientTableViewCell.swift */; };
+		2DDEDC8D1DB96B6800A609B0 /* SBListPatients.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDEDC8C1DB96B6800A609B0 /* SBListPatients.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2D0FB6E91DB7C11300AB7EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0FB6F21DB7C37800AB7EDF /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		2D0FB6F41DB7C57700AB7EDF /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		2DDEDC8C1DB96B6800A609B0 /* SBListPatients.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBListPatients.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2D0FB6DE1DB7C11300AB7EDF /* Info.plist */,
 				2D0FB6F21DB7C37800AB7EDF /* Patient.swift */,
 				2D0FB6F41DB7C57700AB7EDF /* PatientTableViewCell.swift */,
+				2DDEDC8C1DB96B6800A609B0 /* SBListPatients.storyboard */,
 			);
 			path = "HealthMatic-ListPatients";
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0FB6DD1DB7C11300AB7EDF /* LaunchScreen.storyboard in Resources */,
+				2DDEDC8D1DB96B6800A609B0 /* SBListPatients.storyboard in Resources */,
 				2D0FB6DA1DB7C11300AB7EDF /* Assets.xcassets in Resources */,
 				2D0FB6D81DB7C11300AB7EDF /* Main.storyboard in Resources */,
 			);
@@ -414,6 +418,7 @@
 				2D0FB6EE1DB7C11300AB7EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D0FB6EF1DB7C11300AB7EDF /* Build configuration list for PBXNativeTarget "HealthMatic-ListPatientsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				2D0FB6F11DB7C11300AB7EDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

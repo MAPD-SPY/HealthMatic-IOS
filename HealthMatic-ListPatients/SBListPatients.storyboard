@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Information-->
+        <scene sceneID="PXE-Wf-t4I">
+            <objects>
+                <viewController id="KGT-yh-m3i" customClass="ViewController" customModule="HealthMatic_ListPatients" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8yB-4i-bwI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kdI-Dg-FY1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rdb-Bs-pXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jl7-M0-cwR">
+                                <frame key="frameInset" minX="85" minY="86" width="205" height="29"/>
+                                <segments>
+                                    <segment title="MY PATIENTS"/>
+                                    <segment title="ALL PATIENTS"/>
+                                </segments>
+                                <connections>
+                                    <action selector="patientSelection:" destination="KGT-yh-m3i" eventType="valueChanged" id="ikY-Vc-ryH"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Gp-1X-Ylg">
+                                <frame key="frameInset" minY="154" width="375" height="513"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatientTableViewCell" rowHeight="70" id="GwA-yQ-AOE" customClass="PatientTableViewCell" customModule="HealthMatic_ListPatients" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GwA-yQ-AOE" id="LxH-KN-l5t">
+                                            <frame key="frameInset" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circled User Male_2" translatesAutoresizingMaskIntoConstraints="NO" id="PrH-T2-Er7">
+                                                    <frame key="frameInset" minX="8" minY="9" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patient Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsr-mV-4dY">
+                                                    <frame key="frameInset" minX="66" minY="9" width="194" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nurse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOY-vO-ayQ">
+                                                    <frame key="frameInset" minX="66" minY="38" width="60" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-5a-3cD">
+                                                    <frame key="frameInset" minX="268" minY="24" width="56" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tse-cZ-X0R">
+                                                    <frame key="frameInset" minX="327" minY="24" width="40" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-Ma-yrZ">
+                                                    <frame key="frameInset" minX="128" minY="38" width="132" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="patientImage" destination="PrH-T2-Er7" id="1ZB-bd-7Yu"/>
+                                            <outlet property="patientNameLabel" destination="Qsr-mV-4dY" id="B3k-7T-ZvO"/>
+                                            <outlet property="roomNumberLabel" destination="tse-cZ-X0R" id="Zwe-b6-AU0"/>
+                                            <outlet property="staffNameLabel" destination="4gk-Ma-yrZ" id="nvE-1D-93m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Gp-1X-Ylg" firstAttribute="top" secondItem="jl7-M0-cwR" secondAttribute="bottom" constant="20" id="3Mf-o5-47H"/>
+                            <constraint firstItem="0Gp-1X-Ylg" firstAttribute="leading" secondItem="Rdb-Bs-pXJ" secondAttribute="leading" id="5QH-6U-e2h"/>
+                            <constraint firstAttribute="trailing" secondItem="0Gp-1X-Ylg" secondAttribute="trailing" id="941-zZ-ejM"/>
+                            <constraint firstItem="jl7-M0-cwR" firstAttribute="top" secondItem="8yB-4i-bwI" secondAttribute="bottom" constant="20" id="cbI-7s-thv"/>
+                            <constraint firstItem="jl7-M0-cwR" firstAttribute="leading" secondItem="Rdb-Bs-pXJ" secondAttribute="leadingMargin" constant="20" id="gpc-os-rvM"/>
+                            <constraint firstItem="kdI-Dg-FY1" firstAttribute="top" secondItem="0Gp-1X-Ylg" secondAttribute="bottom" id="l4F-Ts-Gi5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jl7-M0-cwR" secondAttribute="trailing" constant="20" id="rma-U0-Al1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Information" id="yR0-oe-ZMZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="ByJ-2L-EqA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="patientTableView" destination="0Gp-1X-Ylg" id="k20-yH-Yfs"/>
+                        <outlet property="segCtrlPatientSelection" destination="jl7-M0-cwR" id="7SI-4h-lm1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlJ-4K-rpz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Circled User Male_2" width="96" height="96"/>
+    </resources>
+</document>
