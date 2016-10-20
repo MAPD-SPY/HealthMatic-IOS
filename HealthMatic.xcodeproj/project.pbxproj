@@ -12,6 +12,9 @@
 		80CDBD621DB57149002238BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD601DB57149002238BE /* Main.storyboard */; };
 		80CDBD641DB57149002238BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD631DB57149002238BE /* Assets.xcassets */; };
 		80CDBD671DB57149002238BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD651DB57149002238BE /* LaunchScreen.storyboard */; };
+		EA87B8CC1DB93E3300831E61 /* Prashant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B8CB1DB93E3300831E61 /* Prashant.storyboard */; };
+		EAA280DB1DB57C3800B4DA6C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA280DA1DB57C3800B4DA6C /* CheckBox.swift */; };
+		EAB3B09B1DB69F4000D7F8A2 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB3B09A1DB69F4000D7F8A2 /* ColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		80CDBD631DB57149002238BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CDBD661DB57149002238BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CDBD681DB57149002238BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA87B8CB1DB93E3300831E61 /* Prashant.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prashant.storyboard; sourceTree = "<group>"; };
+		EAA280DA1DB57C3800B4DA6C /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		EAB3B09A1DB69F4000D7F8A2 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		80CDBD501DB57148002238BE = {
 			isa = PBXGroup;
 			children = (
+				EA87B8CB1DB93E3300831E61 /* Prashant.storyboard */,
 				80CDBD5B1DB57149002238BE /* HealthMatic */,
 				80CDBD5A1DB57149002238BE /* Products */,
 			);
@@ -58,8 +65,10 @@
 				80CDBD5E1DB57149002238BE /* ViewController.swift */,
 				80CDBD601DB57149002238BE /* Main.storyboard */,
 				80CDBD631DB57149002238BE /* Assets.xcassets */,
+				EAA280DA1DB57C3800B4DA6C /* CheckBox.swift */,
 				80CDBD651DB57149002238BE /* LaunchScreen.storyboard */,
 				80CDBD681DB57149002238BE /* Info.plist */,
+				EAB3B09A1DB69F4000D7F8A2 /* ColorButton.swift */,
 			);
 			path = HealthMatic;
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					80CDBD581DB57149002238BE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -125,6 +135,7 @@
 				80CDBD671DB57149002238BE /* LaunchScreen.storyboard in Resources */,
 				80CDBD641DB57149002238BE /* Assets.xcassets in Resources */,
 				80CDBD621DB57149002238BE /* Main.storyboard in Resources */,
+				EA87B8CC1DB93E3300831E61 /* Prashant.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +148,8 @@
 			files = (
 				80CDBD5F1DB57149002238BE /* ViewController.swift in Sources */,
 				80CDBD5D1DB57149002238BE /* AppDelegate.swift in Sources */,
+				EAA280DB1DB57C3800B4DA6C /* CheckBox.swift in Sources */,
+				EAB3B09B1DB69F4000D7F8A2 /* ColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapd.spy.HealthMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +278,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapd.spy.HealthMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +301,7 @@
 				80CDBD6D1DB57149002238BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
