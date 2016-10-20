@@ -3,117 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Information-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HealthMatic_ListPatients" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j09-2F-UNb">
-                                <frame key="frameInset" minX="85" minY="86" width="205" height="29"/>
-                                <segments>
-                                    <segment title="MY PATIENTS"/>
-                                    <segment title="ALL PATIENTS"/>
-                                </segments>
-                                <connections>
-                                    <action selector="patientSelection:" destination="BYZ-38-t0r" eventType="valueChanged" id="MBp-EQ-yuB"/>
-                                </connections>
-                            </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="egu-eR-h5F">
-                                <frame key="frameInset" minY="154" width="375" height="513"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatientTableViewCell" rowHeight="70" id="dTD-Ew-n25" customClass="PatientTableViewCell" customModule="HealthMatic_ListPatients" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dTD-Ew-n25" id="yyQ-3t-fqK">
-                                            <frame key="frameInset" width="375" height="69"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circled User Male_2" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-2V-G79">
-                                                    <frame key="frameInset" minX="8" minY="9" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patient Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8J3-fQ-gY8">
-                                                    <frame key="frameInset" minX="66" minY="9" width="194" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nurse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9S-P1-2d7">
-                                                    <frame key="frameInset" minX="66" minY="38" width="60" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-j2-AUr">
-                                                    <frame key="frameInset" minX="268" minY="24" width="56" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8t-sh-zPx">
-                                                    <frame key="frameInset" minX="327" minY="24" width="40" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UII-Ew-NIH">
-                                                    <frame key="frameInset" minX="128" minY="38" width="132" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="patientImage" destination="VFh-2V-G79" id="JdD-E4-guA"/>
-                                            <outlet property="patientNameLabel" destination="8J3-fQ-gY8" id="2gt-4f-xcX"/>
-                                            <outlet property="roomNumberLabel" destination="e8t-sh-zPx" id="i4d-vw-Quq"/>
-                                            <outlet property="staffNameLabel" destination="UII-Ew-NIH" id="bd2-vN-4XS"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="egu-eR-h5F" firstAttribute="top" secondItem="j09-2F-UNb" secondAttribute="bottom" constant="20" id="C2b-ZK-5ZS"/>
-                            <constraint firstItem="egu-eR-h5F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ERf-CM-0fK"/>
-                            <constraint firstItem="j09-2F-UNb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="LtH-iW-7lQ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="egu-eR-h5F" secondAttribute="bottom" id="MNy-I9-fnE"/>
-                            <constraint firstItem="j09-2F-UNb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="tT5-aa-JzZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="j09-2F-UNb" secondAttribute="trailing" constant="20" id="txC-XQ-f6N"/>
-                            <constraint firstAttribute="trailing" secondItem="egu-eR-h5F" secondAttribute="trailing" id="zxD-qV-k3Z"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="View Information" id="QlG-Il-JVY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="1dJ-r5-PSH"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="patientTableView" destination="egu-eR-h5F" id="ry1-he-9Ir"/>
-                        <outlet property="segCtrlPatientSelection" destination="j09-2F-UNb" id="anl-D6-iru"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="844" y="776.76161919040487"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="I9O-zb-kgp">
             <objects>
@@ -125,15 +17,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wWj-hL-lrW"/>
+                        <segue destination="hNn-L5-fYR" kind="relationship" relationship="rootViewController" id="mV8-Vd-d0u"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuy-6j-rrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6Ev-Is-UJ6">
+            <objects>
+                <viewController id="hNn-L5-fYR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Bc-BZ-BaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="pRV-6s-JPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7eV-gx-BW8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="imi-e1-xtV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3d-KZ-gfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="598"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="Circled User Male_2" width="96" height="96"/>
-    </resources>
 </document>
