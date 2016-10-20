@@ -8,20 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		80CDBD5D1DB57149002238BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDBD5C1DB57149002238BE /* AppDelegate.swift */; };
-		80CDBD5F1DB57149002238BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDBD5E1DB57149002238BE /* ViewController.swift */; };
+		80CDBD5F1DB57149002238BE /* te.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDBD5E1DB57149002238BE /* te.swift */; };
 		80CDBD621DB57149002238BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD601DB57149002238BE /* Main.storyboard */; };
 		80CDBD641DB57149002238BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD631DB57149002238BE /* Assets.xcassets */; };
 		80CDBD671DB57149002238BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CDBD651DB57149002238BE /* LaunchScreen.storyboard */; };
+		EA87B8CE1DB9748700831E61 /* Prashant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B8CD1DB9748700831E61 /* Prashant.storyboard */; };
+		EA87B8D01DB9758000831E61 /* SBAddTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B8CF1DB9758000831E61 /* SBAddTest.storyboard */; };
+		EA87B8D21DB975E200831E61 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87B8D11DB975E200831E61 /* PatientTableViewCell.swift */; };
+		EA87B8D41DB9762700831E61 /* SBListPatients.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B8D31DB9762700831E61 /* SBListPatients.storyboard */; };
+		EA87B8D61DB976D200831E61 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87B8D51DB976D200831E61 /* Patient.swift */; };
+		EA87B8D81DB9778400831E61 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87B8D71DB9778400831E61 /* CheckBox.swift */; };
+		EA87B8DA1DB9781400831E61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA87B8D91DB9781400831E61 /* ViewController.swift */; };
+		EA87B8DC1DB97A7C00831E61 /* search_screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA87B8DB1DB97A7C00831E61 /* search_screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80CDBD591DB57149002238BE /* HealthMatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthMatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CDBD5C1DB57149002238BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80CDBD5E1DB57149002238BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80CDBD5E1DB57149002238BE /* te.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = te.swift; sourceTree = "<group>"; };
 		80CDBD611DB57149002238BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80CDBD631DB57149002238BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CDBD661DB57149002238BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CDBD681DB57149002238BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA87B8CD1DB9748700831E61 /* Prashant.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prashant.storyboard; sourceTree = "<group>"; };
+		EA87B8CF1DB9758000831E61 /* SBAddTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SBAddTest.storyboard; path = ../../../../../Downloads/SBAddTest.storyboard; sourceTree = "<group>"; };
+		EA87B8D11DB975E200831E61 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PatientTableViewCell.swift; path = ../../../../../Downloads/PatientTableViewCell.swift; sourceTree = "<group>"; };
+		EA87B8D31DB9762700831E61 /* SBListPatients.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SBListPatients.storyboard; path = ../../../../../Downloads/SBListPatients.storyboard; sourceTree = "<group>"; };
+		EA87B8D51DB976D200831E61 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = ../../../../../Downloads/Patient.swift; sourceTree = "<group>"; };
+		EA87B8D71DB9778400831E61 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		EA87B8D91DB9781400831E61 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../../Downloads/ViewController.swift; sourceTree = "<group>"; };
+		EA87B8DB1DB97A7C00831E61 /* search_screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = search_screen.storyboard; path = ../../../../../Downloads/search_screen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +70,20 @@
 		80CDBD5B1DB57149002238BE /* HealthMatic */ = {
 			isa = PBXGroup;
 			children = (
+				EA87B8DB1DB97A7C00831E61 /* search_screen.storyboard */,
+				EA87B8D91DB9781400831E61 /* ViewController.swift */,
+				EA87B8D51DB976D200831E61 /* Patient.swift */,
+				EA87B8D31DB9762700831E61 /* SBListPatients.storyboard */,
+				EA87B8D11DB975E200831E61 /* PatientTableViewCell.swift */,
+				EA87B8CF1DB9758000831E61 /* SBAddTest.storyboard */,
+				EA87B8CD1DB9748700831E61 /* Prashant.storyboard */,
 				80CDBD5C1DB57149002238BE /* AppDelegate.swift */,
-				80CDBD5E1DB57149002238BE /* ViewController.swift */,
+				80CDBD5E1DB57149002238BE /* te.swift */,
 				80CDBD601DB57149002238BE /* Main.storyboard */,
 				80CDBD631DB57149002238BE /* Assets.xcassets */,
 				80CDBD651DB57149002238BE /* LaunchScreen.storyboard */,
 				80CDBD681DB57149002238BE /* Info.plist */,
+				EA87B8D71DB9778400831E61 /* CheckBox.swift */,
 			);
 			path = HealthMatic;
 			sourceTree = "<group>";
@@ -96,6 +120,7 @@
 				TargetAttributes = {
 					80CDBD581DB57149002238BE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -123,8 +148,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				80CDBD671DB57149002238BE /* LaunchScreen.storyboard in Resources */,
+				EA87B8D01DB9758000831E61 /* SBAddTest.storyboard in Resources */,
 				80CDBD641DB57149002238BE /* Assets.xcassets in Resources */,
+				EA87B8D41DB9762700831E61 /* SBListPatients.storyboard in Resources */,
+				EA87B8DC1DB97A7C00831E61 /* search_screen.storyboard in Resources */,
 				80CDBD621DB57149002238BE /* Main.storyboard in Resources */,
+				EA87B8CE1DB9748700831E61 /* Prashant.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CDBD5F1DB57149002238BE /* ViewController.swift in Sources */,
+				EA87B8DA1DB9781400831E61 /* ViewController.swift in Sources */,
+				EA87B8D21DB975E200831E61 /* PatientTableViewCell.swift in Sources */,
+				EA87B8D61DB976D200831E61 /* Patient.swift in Sources */,
+				80CDBD5F1DB57149002238BE /* te.swift in Sources */,
 				80CDBD5D1DB57149002238BE /* AppDelegate.swift in Sources */,
+				EA87B8D81DB9778400831E61 /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +286,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapd.spy.HealthMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapd.spy.HealthMatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +321,7 @@
 				80CDBD6D1DB57149002238BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
