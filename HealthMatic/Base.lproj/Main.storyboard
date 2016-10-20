@@ -16,10 +16,32 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ojd-aV-m3c" kind="relationship" relationship="rootViewController" id="mGK-as-Ajd"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6F-zN-Lw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="281" y="389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OIU-wq-7Ar">
+            <objects>
+                <viewController id="ojd-aV-m3c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pkk-ov-kk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="WbX-kb-czt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JwU-aF-kk2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TaK-DB-dT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWT-C3-2u5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="388"/>
         </scene>
     </scenes>
 </document>
